@@ -15,6 +15,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class DbManager {
 
+
     private DbHelper dbHelper;
     private Context context;
     private SQLiteDatabase liteDatabase;

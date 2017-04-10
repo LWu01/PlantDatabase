@@ -5,7 +5,7 @@ package com.lisa.currys.plantdatabase;
  */
 
 public class PlantInfo {
-
+//Contract class for DB
 
     public static final String TABLE_NAME = "items";
 

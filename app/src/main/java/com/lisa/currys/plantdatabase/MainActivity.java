@@ -15,12 +15,15 @@ public class MainActivity extends AppCompatActivity {
     final String[] from = new String[] {PlantInfo._ID, PlantInfo.COL_NAME, PlantInfo.COL_SOW,
             PlantInfo.COL_SOIL, PlantInfo.COL_WATER, PlantInfo.COL_TEMP, PlantInfo.COL_LIGHT,
             PlantInfo.COL_HARVEST, PlantInfo.COL_EXTRA};
-    final int[] to = new int[]{}
+    final int[] to = new int[]{};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //access DB
+        DbHelper mDbHelper = new DbHelper(this);
 
         //enter database and arraylist
         //
